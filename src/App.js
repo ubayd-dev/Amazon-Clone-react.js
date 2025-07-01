@@ -2,16 +2,22 @@ import "./App.css";
 import { Route } from "react-router-dom";
 import Home from "./components/Home";
 import Products from "./components/Products";
+import Header from "./components/layout/Header"
 
 const App = () => {
   return (
     <div>
-      <Route path="/home">
+      <Header />
+      <main>
+            <Route path="/home">
         <Home />
       </Route>
       <Route path="/products">
         <Products />
       </Route>
+
+      </main>
+  
     </div>
   );
 };
